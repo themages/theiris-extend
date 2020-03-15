@@ -10,7 +10,7 @@ std::string hash(std::string const& s) {
     long long hash_value = 0;
     long long p_pow = 1;
     for (char c : s) {
-        hash_value = (hash_value + (c - "a" + 1) * p_pow) % m;
+        hash_value = (hash_value + (c - 'a' + 1) * p_pow) % m;
         p_pow = (p_pow * p) % m;
     }
     return std::to_string(hash_value);
@@ -33,8 +33,8 @@ Napi::String Method(const Napi::CallbackInfo& info) {
 }
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
-    exports.Set(Napi::String::New(env, "getFringerprint")),
-            Napi::Function::New(env, Method);
+    exports.Set(Napi::String::New(env, "getFringerprint"),
+            Napi::Function::New(env, Method));
     return exports;
 }
 
