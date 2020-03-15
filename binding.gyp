@@ -1,7 +1,7 @@
 {
     "targets": [
         {
-            "target_name": "fingerprint",
+            "target_name": "fringerprint",
             "cflags!":["-fno-exceptions"],
             "cflags_cc!": ["-fno-exceptions"],
             "sources": [
