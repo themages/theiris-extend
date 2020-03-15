@@ -1,0 +1,29 @@
+{
+    "name": "theiris-extend",
+    "version": "1.0.0",
+    "description": "this is theiris extend",
+    "main": "index.js",
+    "scripts": {
+        "rebuild": "npx node-gyp rebuild"
+    },
+    "gyp": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/themages/theiris-extend.git"
+    },
+    "keywords": [
+        "electron",
+        "c++",
+        "golang"
+    ],
+    "author": "zengxingqi",
+    "license": "GPL3.0",
+    "bugs": {
+        "url": "https://github.com/themages/theiris-extend/issues"
+    },
+    "homepage": "https://github.com/themages/theiris-extend#readme",
+    "dependencies": {
+        "bindings": "^1.5.0",
+        "node-addon-api": "^2.0.0"
+    }
+}
