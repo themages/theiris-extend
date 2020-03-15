@@ -4,6 +4,7 @@
     "description": "this is theiris extend",
     "main": "index.js",
     "scripts": {
+        "install": "node-gyp rebuild",
         "rebuild": "npx node-gyp rebuild"
     },
     "gyp": true,
