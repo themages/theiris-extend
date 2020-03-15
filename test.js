@@ -1,2 +1,2 @@
-const fp = require("./idnex");
+const fp = require("./index");
 console.log(fp.getFringerprint());
